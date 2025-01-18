@@ -32,12 +32,12 @@ Working
 - [x] To produce or write some events we use kafka-console-producer.sh
 - [x] To Read or subscribe to the events we use kafka-console-consumer.sh
 
-Commands
+**Commands**
 
 
-Zookeeper spinning : bin/zookeeper-server-start.sh config/zookeeper.properties
-Kafka ready : $ bin/kafka-server-start.sh config/server.properties
-Topic creation : bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+**Zookeeper spinning **: bin/zookeeper-server-start.sh config/zookeeper.properties
+**Kafka ready **: $ bin/kafka-server-start.sh config/server.properties
+**Topic creation** : bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 Topic description: bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
 Event write : bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 Event read : bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
